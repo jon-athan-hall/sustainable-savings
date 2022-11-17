@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sustainable Savings</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Sustainable Savings</h1>
+    </header>
+
+    <main>
+      <form id="form">
+        <label for="usual-price">How much does the product cost?</label>
+        <input name="usual-price" type="number" step="0.01" />
+        <label for="usual-time">How many months does the product last?</label>
+        <input name="usual-time" type="number" />
+        <label for="shift-price">How much does Shift's sustainable option cost?</label>
+        <input name="shift-price" type="number" step="0.01" />
+        <input type="submit" value="Shift!">
+      </form>
+      <div>
+        <canvas id="canvas" width="800" height="600"></canvas>
+      </div>
+    </main>
+
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
